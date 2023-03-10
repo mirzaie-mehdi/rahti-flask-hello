@@ -56,7 +56,7 @@ def home():
     '''
       Hello page, shows photos in the /static folder
     '''
-    kittens = Path('/static2/').rglob('*.jpg')
+    kittens = Path('/static2/').rglob('fox.jpg')
     return flask.render_template_string(
         PAGE,
         student=config["student"],
